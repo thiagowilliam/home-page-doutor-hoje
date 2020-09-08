@@ -1,0 +1,94 @@
+body {
+  -webkit-font-smoothing: antialiased !important;
+  background: var(--color-background);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+input,
+button,
+textarea {
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-text-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+body,
+html,
+#root {
+  height: 100vh;
+}
+
+:root {
+  --color-background: #ffffff;
+  --color-primary: #0439d6;
+  --color-secundary: #ef0732;
+  --color-title-primary: #0439d6;
+  --color-title-secundary: #ef0732;
+  --color-text-base: #0439d6;
+  --color-text-secundary: #ef0732;
+  --color-text-in-primary: #ffffff;
+  --color-text-in-secundary: #ffffff;
+  font-size: 60%;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
+
+.centraliza {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

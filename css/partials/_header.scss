@@ -1,0 +1,84 @@
+.headerCentraliza {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.mainMenu {
+  display: flex;
+  ul {
+    display: flex;
+  }
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+  }
+
+  .menuAnchor {
+    color: var(--color-text-base);
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-left: 0.8rem;
+  }
+}
+
+.wrapperSelectStates {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: url(../assets/svg/arrow-down.svg);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+  }
+  select {
+    color: var(--color-text-base);
+    font-size: 1.8rem;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    margin-left: 0.8rem;
+  }
+}
+
+.wrapperLoginArea {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  span {
+    color: var(--color-text-base);
+    display: inline-block;
+    margin: 0 0.8rem;
+  }
+
+  .typeButton {
+    height: 4rem;
+    padding: 0 4rem;
+    border-radius: 2rem;
+    transition: all 0.2s;
+  }
+
+  .loginButton {
+    background: var(--color-text-base);
+    color: var(--color-text-in-primary);
+    border: 0;
+    &:hover {
+      background: darken(#0439d6, 10%);
+    }
+  }
+
+  .registerButton {
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    &:hover {
+      background: darken(#fff, 5%);
+    }
+  }
+}
