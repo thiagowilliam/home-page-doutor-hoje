@@ -32,9 +32,10 @@
     content: url(../assets/svg/arrow-down.svg);
     display: inline-block;
     position: absolute;
-    bottom: 0;
-    width: 40px;
-    height: 40px;
+    left: 50%;
+    bottom: -10px;
+    width: 11px;
+    height: 20px;
   }
   select {
     color: var(--color-text-base);

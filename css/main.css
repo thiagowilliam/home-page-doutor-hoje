@@ -147,9 +147,10 @@ html,
   content: url(../assets/svg/arrow-down.svg);
   display: inline-block;
   position: absolute;
-  bottom: 0;
-  width: 40px;
-  height: 40px;
+  left: 50%;
+  bottom: -10px;
+  width: 11px;
+  height: 20px;
 }
 
 .wrapperSelectStates select {
@@ -204,5 +205,65 @@ html,
 
 .wrapperLoginArea .registerButton:hover {
   background: #f2f2f2;
+}
+
+.wrapperAppointment {
+  background: url("../assets/background-appointment.png");
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+}
+
+@media (max-width: 1420px) {
+  .wrapperAppointment {
+    background: url("../assets/background-appointment.png") 23% 0;
+  }
+}
+
+.centralizaAppointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 20px;
+  height: 100%;
+}
+
+.rightNavForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.listAppointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.anchorAppointment {
+  color: var(--color-text-base);
+  font-size: 1.8rem;
+  margin-right: 3rem;
+}
+
+.phoneNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-secundary);
+}
+
+.phoneNumber img {
+  height: 20px;
+  margin-right: 0.8rem;
 }
 /*# sourceMappingURL=main.css.map */
