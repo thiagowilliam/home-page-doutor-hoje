@@ -95,6 +95,10 @@ $color-text-in-primary: #ffffff;
 $color-text-in-secundary: #ffffff;
 $color-white: #ffffff;
 
+$color-background-query: #d2dcf7;
+
+$color-gradient-blue-light: #c4d3f7;
+
 @mixin mainButton($background, $color) {
   background: $background;
   color: $color;
@@ -106,5 +110,62 @@ $color-white: #ffffff;
   transition: all 0.2s;
   &:hover {
     background: darken($background, 5%);
+  }
+}
+
+@mixin cardSignatures($colorGradient1, $colorGradient2, $colorText) {
+  padding: 3rem;
+  background: linear-gradient(131deg, $colorGradient1 0%, $colorGradient2 100%);
+  border-radius: 3rem;
+  color: $colorText;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    span {
+      font-size: 1.4rem;
+      display: block;
+    }
+  }
+
+  .describeSignatures {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .benefitsSignatures {
+    font-size: 1.6rem;
+    font-weight: 300;
+    flex: 1;
+    strong {
+      display: block;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+
+  .princeButtonSignature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    button {
+      @include mainButton($color-white, $color-text-secundary);
+    }
+  }
+
+  .priceSignature {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.6rem;
+    p {
+      font-size: 1.2rem;
+    }
+    strong {
+      font-size: 3.6rem;
+    }
   }
 }

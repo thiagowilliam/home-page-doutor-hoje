@@ -436,4 +436,588 @@ html,
 .footerFormAppointment .sendSearch:hover {
   background: #d6062d;
 }
+
+.wrapperSignature {
+  background: url("../assets/img-signatures.png") no-repeat 100% top;
+}
+
+.topSignature {
+  padding: 10rem 300px 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.topSignature h2 {
+  color: #0439d6;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 6rem;
+  padding-right: 4rem;
+}
+
+.topSignature p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ef0732;
+  width: 80%;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
+}
+
+.boxCardSignatures {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+  padding-right: 8rem;
+}
+
+.easy_cardSignatures {
+  padding: 3rem;
+  background: linear-gradient(131deg, #ffffff 0%, #c4d3f7 100%);
+  border-radius: 3rem;
+  color: #0439d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.easy_cardSignatures h3 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.easy_cardSignatures h3 span {
+  font-size: 1.4rem;
+  display: block;
+}
+
+.easy_cardSignatures .describeSignatures {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.easy_cardSignatures .benefitsSignatures {
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.easy_cardSignatures .benefitsSignatures strong {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.easy_cardSignatures .princeButtonSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.easy_cardSignatures .princeButtonSignature button {
+  background: #ffffff;
+  color: #ef0732;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.easy_cardSignatures .princeButtonSignature button:hover {
+  background: #f2f2f2;
+}
+
+.easy_cardSignatures .priceSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2.6rem;
+}
+
+.easy_cardSignatures .priceSignature p {
+  font-size: 1.2rem;
+}
+
+.easy_cardSignatures .priceSignature strong {
+  font-size: 3.6rem;
+}
+
+.plus_cardSignatures {
+  padding: 3rem;
+  background: linear-gradient(131deg, #2d4bdc 0%, #80a3f6 100%);
+  border-radius: 3rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plus_cardSignatures h3 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.plus_cardSignatures h3 span {
+  font-size: 1.4rem;
+  display: block;
+}
+
+.plus_cardSignatures .describeSignatures {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.plus_cardSignatures .benefitsSignatures {
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.plus_cardSignatures .benefitsSignatures strong {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.plus_cardSignatures .princeButtonSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.plus_cardSignatures .princeButtonSignature button {
+  background: #ffffff;
+  color: #ef0732;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.plus_cardSignatures .princeButtonSignature button:hover {
+  background: #f2f2f2;
+}
+
+.plus_cardSignatures .priceSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2.6rem;
+}
+
+.plus_cardSignatures .priceSignature p {
+  font-size: 1.2rem;
+}
+
+.plus_cardSignatures .priceSignature strong {
+  font-size: 3.6rem;
+}
+
+.total_cardSignatures {
+  padding: 3rem;
+  background: linear-gradient(131deg, #4222cd 0%, #070256 100%);
+  border-radius: 3rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.total_cardSignatures h3 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.total_cardSignatures h3 span {
+  font-size: 1.4rem;
+  display: block;
+}
+
+.total_cardSignatures .describeSignatures {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.total_cardSignatures .benefitsSignatures {
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.total_cardSignatures .benefitsSignatures strong {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.total_cardSignatures .princeButtonSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.total_cardSignatures .princeButtonSignature button {
+  background: #ffffff;
+  color: #ef0732;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.total_cardSignatures .princeButtonSignature button:hover {
+  background: #f2f2f2;
+}
+
+.total_cardSignatures .priceSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2.6rem;
+}
+
+.total_cardSignatures .priceSignature p {
+  font-size: 1.2rem;
+}
+
+.total_cardSignatures .priceSignature strong {
+  font-size: 3.6rem;
+}
+
+.boxCardFamily {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 8rem 14rem 0;
+  background: url(../assets/img-signature-family.png) 53% -67% no-repeat;
+}
+
+.descriptionSignatureFamily {
+  width: calc(33% - 1.2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.descriptionSignatureFamily h3 {
+  font-size: 5.5rem;
+  color: #ef0732;
+  font-weight: 300;
+  line-height: 6.5rem;
+  margin-bottom: 3rem;
+}
+
+.descriptionSignatureFamily p {
+  font-size: 2.4rem;
+  color: #0439d6;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.descriptionSignatureFamily small {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #0439d6;
+}
+
+.family_cardSignatures {
+  width: calc(33% - 1.2rem);
+  padding: 3rem;
+  background: linear-gradient(131deg, #ef0732 0%, #7d0754 100%);
+  border-radius: 3rem;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.family_cardSignatures h3 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.family_cardSignatures h3 span {
+  font-size: 1.4rem;
+  display: block;
+}
+
+.family_cardSignatures .describeSignatures {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.family_cardSignatures .benefitsSignatures {
+  font-size: 1.6rem;
+  font-weight: 300;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.family_cardSignatures .benefitsSignatures strong {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.family_cardSignatures .princeButtonSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.family_cardSignatures .princeButtonSignature button {
+  background: #ffffff;
+  color: #ef0732;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.family_cardSignatures .princeButtonSignature button:hover {
+  background: #f2f2f2;
+}
+
+.family_cardSignatures .priceSignature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2.6rem;
+}
+
+.family_cardSignatures .priceSignature p {
+  font-size: 1.2rem;
+}
+
+.family_cardSignatures .priceSignature strong {
+  font-size: 3.6rem;
+}
+
+.wrapperQuery {
+  width: 100%;
+  background: #d2dcf7;
+  padding: 5rem 0;
+}
+
+.wrapperQuery .centraliza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.descriptionQuery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.6rem;
+  color: #0439d6;
+  font-weight: 300;
+}
+
+.descriptionQuery img {
+  margin-right: 2.8rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.descriptionQuery p {
+  max-width: 44rem;
+}
+
+.descriptionQuery p span {
+  display: block;
+}
+
+.boxStateLinkQuery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxStateQuery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boxStateQuery .typeStateQuery {
+  color: #ef0732;
+  padding: 0 1.6rem 1rem 1.6rem;
+  margin: 0 2rem;
+  font-size: 2.6rem;
+  font-weight: 300;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxStateQuery .typeStateQuery::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #ef0732;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+.boxStateQuery .queryActive {
+  border-bottom: 1px solid #ef0732;
+}
+
+.boxStateQuery .queryActive::before {
+  background: #ef0732;
+}
+
+.boxLinkQuery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boxLinkQuery a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  color: #0439d6;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.boxLinkQuery a:hover {
+  background: #f2f2f2;
+}
+
+.boxLinkQuery a + a {
+  margin-left: 2rem;
+}
 /*# sourceMappingURL=main.css.map */
