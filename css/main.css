@@ -69,15 +69,6 @@ html,
 }
 
 :root {
-  --color-background: #ffffff;
-  --color-primary: #0439d6;
-  --color-secundary: #ef0732;
-  --color-title-primary: #0439d6;
-  --color-title-secundary: #ef0732;
-  --color-text-base: #0439d6;
-  --color-text-secundary: #ef0732;
-  --color-text-in-primary: #ffffff;
-  --color-text-in-secundary: #ffffff;
   font-size: 60%;
 }
 
@@ -127,7 +118,7 @@ html,
 }
 
 .mainMenu .menuAnchor {
-  color: var(--color-text-base);
+  color: #0439d6;
   font-size: 1.8rem;
   text-decoration: none;
   margin-left: 0.8rem;
@@ -154,7 +145,7 @@ html,
 }
 
 .wrapperSelectStates select {
-  color: var(--color-text-base);
+  color: #0439d6;
   font-size: 1.8rem;
   border: 0;
   -webkit-appearance: none;
@@ -175,7 +166,7 @@ html,
 }
 
 .wrapperLoginArea span {
-  color: var(--color-text-base);
+  color: #0439d6;
   display: inline-block;
   margin: 0 0.8rem;
 }
@@ -189,8 +180,8 @@ html,
 }
 
 .wrapperLoginArea .loginButton {
-  background: var(--color-text-base);
-  color: var(--color-text-in-primary);
+  background: #0439d6;
+  color: #ffffff;
   border: 0;
 }
 
@@ -199,8 +190,9 @@ html,
 }
 
 .wrapperLoginArea .registerButton {
-  border: 1px solid var(--color-primary);
+  border: 1px solid #0439d6;
   background: transparent;
+  color: #0439d6;
 }
 
 .wrapperLoginArea .registerButton:hover {
@@ -208,15 +200,15 @@ html,
 }
 
 .wrapperAppointment {
-  background: url("../assets/background-appointment.png");
+  background: url("../assets/background-appointment.png") 50% 0;
   width: 100%;
   height: 900px;
   background-size: cover;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1250px) {
   .wrapperAppointment {
-    background: url("../assets/background-appointment.png") 23% 0;
+    background: url("../assets/background-appointment.png") 70% 0;
   }
 }
 
@@ -231,6 +223,10 @@ html,
   height: 100%;
 }
 
+.leftLogo {
+  width: 60%;
+}
+
 .rightNavForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +234,13 @@ html,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .listAppointment {
@@ -247,7 +250,7 @@ html,
 }
 
 .anchorAppointment {
-  color: var(--color-text-base);
+  color: #0439d6;
   font-size: 1.8rem;
   margin-right: 3rem;
 }
@@ -259,11 +262,178 @@ html,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: var(--color-secundary);
+  color: #ef0732;
 }
 
 .phoneNumber img {
   height: 20px;
   margin-right: 0.8rem;
+}
+
+.formAppointment {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+}
+
+.formAppointment legend {
+  font-size: 6rem;
+  color: #ef0732;
+  font-weight: 300;
+  text-align: right;
+  margin: 6rem 0;
+}
+
+.formAppointment legend span {
+  display: block;
+  width: 100%;
+}
+
+.formAppointment fieldset {
+  border: 0;
+}
+
+.wrapperButton {
+  border: 1px solid #0439d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4rem;
+}
+
+.wrapperButton button {
+  border: 0;
+  color: #0439d6;
+  width: 50%;
+  background: transparent;
+  font-size: 2.4rem;
+  height: 6.6rem;
+  text-align: center;
+  border-radius: 4rem;
+  font-weight: 300;
+}
+
+.wrapperButton button.hasBlue {
+  background: #0439d6;
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.wrapperButton button.hasBlue:hover {
+  background: #032ca4;
+}
+
+.wrapperInput {
+  background: #ffffff;
+  border: 1px solid #0439d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4rem;
+  font-size: 2.4rem;
+  padding: 1.4rem;
+  margin-top: 1.8rem;
+}
+
+.wrapperInput input {
+  background: transparent;
+  border: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #0439d6;
+}
+
+.wrapperInput input::-webkit-input-placeholder {
+  color: #0439d6;
+  opacity: 0.5;
+}
+
+.wrapperInput input:-ms-input-placeholder {
+  color: #0439d6;
+  opacity: 0.5;
+}
+
+.wrapperInput input::-ms-input-placeholder {
+  color: #0439d6;
+  opacity: 0.5;
+}
+
+.wrapperInput input::placeholder {
+  color: #0439d6;
+  opacity: 0.5;
+}
+
+.wrapperInput p {
+  width: 13rem;
+  padding-left: 1.4rem;
+  color: #0439d6;
+  font-weight: 300;
+}
+
+.wrapperInput img {
+  margin-right: 1.4rem;
+}
+
+.footerFormAppointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.8rem;
+}
+
+.footerFormAppointment .anchorSeeMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  color: #ef0732;
+  font-size: 1.4rem;
+  margin: 0.8rem 0 0 2rem;
+}
+
+.footerFormAppointment .anchorSeeMore img {
+  margin-right: 1.6rem;
+}
+
+.footerFormAppointment .textAlternative {
+  width: 100%;
+  color: #ef0732;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footerFormAppointment .textAlternative a {
+  font-weight: 600;
+  color: #ef0732;
+}
+
+.footerFormAppointment .sendSearch {
+  background: #ef0732;
+  color: #ffffff;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footerFormAppointment .sendSearch:hover {
+  background: #d6062d;
 }
 /*# sourceMappingURL=main.css.map */

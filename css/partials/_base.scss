@@ -68,15 +68,6 @@ html,
 }
 
 :root {
-  --color-background: #ffffff;
-  --color-primary: #0439d6;
-  --color-secundary: #ef0732;
-  --color-title-primary: #0439d6;
-  --color-title-secundary: #ef0732;
-  --color-text-base: #0439d6;
-  --color-text-secundary: #ef0732;
-  --color-text-in-primary: #ffffff;
-  --color-text-in-secundary: #ffffff;
   font-size: 60%;
 }
 
@@ -91,4 +82,29 @@ html,
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+$color-background: #ffffff;
+$color-primary: #0439d6;
+$color-secundary: #ef0732;
+$color-title-primary: #0439d6;
+$color-title-secundary: #ef0732;
+$color-text-base: #0439d6;
+$color-text-secundary: #ef0732;
+$color-text-in-primary: #ffffff;
+$color-text-in-secundary: #ffffff;
+$color-white: #ffffff;
+
+@mixin mainButton($background, $color) {
+  background: $background;
+  color: $color;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  transition: all 0.2s;
+  &:hover {
+    background: darken($background, 5%);
+  }
 }

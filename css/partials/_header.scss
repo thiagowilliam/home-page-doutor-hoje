@@ -17,7 +17,7 @@
   }
 
   .menuAnchor {
-    color: var(--color-text-base);
+    color: $color-text-base;
     font-size: 1.8rem;
     text-decoration: none;
     margin-left: 0.8rem;
@@ -38,7 +38,7 @@
     height: 20px;
   }
   select {
-    color: var(--color-text-base);
+    color: $color-text-base;
     font-size: 1.8rem;
     border: 0;
     -webkit-appearance: none;
@@ -54,7 +54,7 @@
   align-items: center;
   font-size: 1.8rem;
   span {
-    color: var(--color-text-base);
+    color: $color-text-base;
     display: inline-block;
     margin: 0 0.8rem;
   }
@@ -67,19 +67,20 @@
   }
 
   .loginButton {
-    background: var(--color-text-base);
-    color: var(--color-text-in-primary);
+    background: $color-text-base;
+    color: $color-text-in-primary;
     border: 0;
     &:hover {
-      background: darken(#0439d6, 10%);
+      background: darken($color-primary, 10%);
     }
   }
 
   .registerButton {
-    border: 1px solid var(--color-primary);
+    border: 1px solid $color-primary;
     background: transparent;
+    color: $color-text-base;
     &:hover {
-      background: darken(#fff, 5%);
+      background: darken($color-white, 5%);
     }
   }
 }

@@ -1,11 +1,11 @@
 .wrapperAppointment {
-  background: url('../assets/background-appointment.png');
+  background: url('../assets/background-appointment.png') 50% 0;
   width: 100%;
   height: 900px;
   background-size: cover;
 
-  @media (max-width: 1420px) {
-    background: url('../assets/background-appointment.png') 23% 0;
+  @media (max-width: 1250px) {
+    background: url('../assets/background-appointment.png') 70% 0;
   }
 }
 
@@ -16,9 +16,16 @@
   height: 100%;
 }
 
+.leftLogo {
+  width: 60%;
+}
+
 .rightNavForm {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-start;
 }
 
 .listAppointment {
@@ -26,7 +33,7 @@
 }
 
 .anchorAppointment {
-  color: var(--color-text-base);
+  color: $color-text-base;
   font-size: 1.8rem;
   margin-right: 3rem;
 }
@@ -34,9 +41,119 @@
 .phoneNumber {
   display: flex;
   align-items: center;
-  color: var(--color-secundary);
+  color: $color-secundary;
   img {
     height: 20px;
     margin-right: 0.8rem;
+  }
+}
+
+.formAppointment {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  legend {
+    font-size: 6rem;
+    color: $color-text-secundary;
+    font-weight: 300;
+    text-align: right;
+    margin: 6rem 0;
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  fieldset {
+    border: 0;
+  }
+}
+
+.wrapperButton {
+  border: 1px solid $color-primary;
+  display: flex;
+  border-radius: 4rem;
+  button {
+    border: 0;
+    color: $color-text-base;
+    width: 50%;
+    background: transparent;
+    font-size: 2.4rem;
+    height: 6.6rem;
+    text-align: center;
+    border-radius: 4rem;
+    font-weight: 300;
+    &.hasBlue {
+      background: $color-primary;
+      color: $color-text-in-primary;
+      transition: all 0.2s;
+      &:hover {
+        background: darken($color-primary, 10%);
+      }
+    }
+  }
+}
+
+.wrapperInput {
+  background: $color-white;
+  border: 1px solid $color-primary;
+  display: flex;
+  align-items: center;
+  border-radius: 4rem;
+  font-size: 2.4rem;
+  padding: 1.4rem;
+  margin-top: 1.8rem;
+  input {
+    background: transparent;
+    border: 0;
+    flex: 1;
+    color: $color-text-base;
+    &::placeholder {
+      color: $color-text-base;
+      opacity: 0.5;
+    }
+  }
+  p {
+    width: 13rem;
+    padding-left: 1.4rem;
+    color: $color-primary;
+    font-weight: 300;
+  }
+
+  img {
+    margin-right: 1.4rem;
+  }
+}
+
+.footerFormAppointment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+  .anchorSeeMore {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    color: $color-secundary;
+    font-size: 1.4rem;
+    margin: 0.8rem 0 0 2rem;
+    img {
+      margin-right: 1.6rem;
+    }
+  }
+  .textAlternative {
+    width: 100%;
+    color: $color-secundary;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 3rem;
+    a {
+      font-weight: 600;
+      color: $color-secundary;
+    }
+  }
+
+  .sendSearch {
+    @include mainButton($color-secundary, $color-white);
   }
 }
