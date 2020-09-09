@@ -754,8 +754,8 @@ html,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10rem 8rem 14rem 0;
-  background: url(../assets/img-signature-family.png) 53% -67% no-repeat;
+  padding: 10rem 8rem 22rem 0;
+  background: url(../assets/img-signature-family.png) 55% 59px no-repeat;
 }
 
 .descriptionSignatureFamily {
@@ -1022,8 +1022,8 @@ html,
 }
 
 .wrapperExplanationPrices {
-  background: url("../assets/background-what-table-doctor.png") top left no-repeat;
-  background-size: 100% 100%;
+  background: url("../assets/background-what-table-doctor.png") 50% no-repeat;
+  background-size: cover;
   padding: 8rem 0 6rem 0;
   min-height: 204rem;
 }
