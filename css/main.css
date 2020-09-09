@@ -1020,4 +1020,224 @@ html,
 .boxLinkQuery a + a {
   margin-left: 2rem;
 }
+
+.wrapperExplanationPrices {
+  background: url("../assets/background-what-table-doctor.png") top left no-repeat;
+  background-size: 100% 100%;
+  padding: 8rem 0 6rem 0;
+  min-height: 204rem;
+}
+
+.titleExplanation {
+  font-size: 5rem;
+  color: #ef0732;
+  line-height: 5rem;
+  margin-bottom: 1.8rem;
+  font-weight: 300;
+}
+
+.titleExplanation span {
+  display: block;
+}
+
+.describeExplanation {
+  width: 50%;
+}
+
+.describeExplanation p {
+  color: #0439d6;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 1.8rem;
+}
+
+.boxTypesExplanation {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boxTypesExplanation .typeExplanation {
+  margin-right: 4rem;
+  width: 33.3%;
+}
+
+.boxTypesExplanation .titlleTypeExplanation {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #0439d6;
+  margin-bottom: 1.8rem;
+}
+
+.boxTypesExplanation .titlleTypeExplanation strong {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: block;
+  color: #ef0732;
+}
+
+.boxTypesExplanation .listTypeExplanation {
+  position: relative;
+}
+
+.boxTypesExplanation .listTypeExplanation .itemTypeExplanation {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #0439d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.boxTypesExplanation .listTypeExplanation .itemTypeExplanation::before {
+  content: '';
+  width: 15px;
+  height: 13px;
+  display: inline-block;
+  background-image: url(../assets/check.png);
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  top: 8px;
+  margin-right: 2rem;
+}
+
+.boxTypesExplanation .anchorTypeExplanation {
+  color: #ef0732;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding: 0.8rem 1.8rem 1rem 1.8rem;
+  border: 1px solid #ef0732;
+  border-radius: 2.8rem;
+  width: 29rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 3rem;
+}
+
+.boxTypesExplanation .anchorTypeExplanation:hover {
+  color: #ffffff;
+  background: #ef0732;
+}
+
+.boxPrices {
+  margin-top: 20rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.cardPrice {
+  padding: 3rem;
+  border-radius: 3rem;
+  color: #0439d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(131deg, #ffffff 0%, #c4d3f7 100%);
+}
+
+.cardPrice .titleCardPrice {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.cardPrice .listCardPrice {
+  position: relative;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cardPrice .itemCardPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.cardPrice .anchorCardPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  background: #ffffff;
+  color: #0439d6;
+  width: 223px;
+  height: 66px;
+  border-radius: 8rem;
+  font-size: 2.4rem;
+  border: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.cardPrice .anchorCardPrice:hover {
+  background: #f2f2f2;
+}
+
+.alertPrices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+}
+
+.alertPrices small {
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=main.css.map */
