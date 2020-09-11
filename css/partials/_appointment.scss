@@ -73,7 +73,7 @@
   border: 1px solid $color-primary;
   display: flex;
   border-radius: 4rem;
-  span {
+  button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,6 +125,18 @@
 
   img {
     margin-right: 1.4rem;
+  }
+
+  select {
+    background: transparent;
+    border: 0;
+    flex: 1;
+    color: $color-text-base;
+    font-size: 1.8rem;
+  }
+
+  .inputExame {
+    display: none;
   }
 }
 

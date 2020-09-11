@@ -109,22 +109,33 @@
             <legend>Agende sua <span>consulta ou exame</span></legend>
             <fieldset>
               <div class="wrapperButton">
-                <span class="choiceAppointment hasBlue">Consulta médica</span>
-                <span class="choiceAppointment">Exame</span>
+                <button class="choiceConsulta hasBlue">Consulta médica</button>
+                <button class="choiceExame">Exame</button>
               </div>
               <div class="wrapperInput">
                 <p class="typeAppointment">Consulta</p>
                 <img src="assets/svg/arrow-blue-left.svg" alt="" />
                 <input
+                  class="inputConsulta"
                   type="text"
                   placeholder="Digite uma especialidade/código"
+                />
+
+                <input
+                  class="inputExame"
+                  type="text"
+                  placeholder="Digite um exame, procedimento ou cod"
                 />
               </div>
 
               <div class="wrapperInput">
                 <p class="placeAppointment">Local</p>
                 <img src="assets/svg/arrow-blue-left.svg" alt="" />
-                <input type="text" placeholder="Escolha um estado/cidade" />
+                <select name="" id="">
+                  <option value="">Escolha um estado/cidade</option>
+                  <option value="">Cidade 1</option>
+                  <option value="">Cidade 2</option>
+                </select>
               </div>
 
               <div class="footerFormAppointment">
