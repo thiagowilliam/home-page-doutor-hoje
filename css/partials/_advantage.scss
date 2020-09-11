@@ -2,6 +2,9 @@
   background: url('../../assets/background-discounts.png') no-repeat 149%;
   min-height: 1057px;
   padding-top: 10rem;
+  @media (min-width: 1500px) {
+    background: url('../../assets/background-discounts.png') no-repeat top right;
+  }
 }
 
 .boxAdvantages {

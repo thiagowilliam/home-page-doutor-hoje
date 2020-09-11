@@ -1,0 +1,94 @@
+.wrapperSeeAppointment {
+  padding: 10rem 2rem 0 2rem;
+}
+
+.titleSeeAppointment {
+  font-size: 4.8rem;
+  font-weight: 300;
+  color: $color-text-base;
+  text-align: center;
+}
+
+.subTitleSeeAppointment {
+  font-size: 3rem;
+  font-weight: 600;
+  color: $color-text-base;
+  text-align: center;
+}
+
+.boxBreadcrumbAppointment {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rem 0;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: $color-primary;
+    left: 50%;
+    top: 28%;
+    transform: translateX(-50%);
+  }
+}
+
+.itemBreadcrumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 190px;
+  position: relative;
+  z-index: 2;
+  figure {
+    background: $color-white;
+    border: 2px solid $color-primary;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $color-text-base;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    height: 40px;
+  }
+}
+
+.boxImpressiveNumbers {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0 10rem 0;
+  .itemNumber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(131deg, #2d4bdc 0%, #80a3f6 100%);
+    width: 255px;
+    height: 265px;
+    border-radius: 3rem;
+    color: #dde4f9;
+    padding: 4rem;
+    margin-right: 3rem;
+    strong {
+      font-size: 4.8rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
