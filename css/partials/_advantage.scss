@@ -5,10 +5,26 @@
   @media (min-width: 1500px) {
     background: url('../../assets/background-discounts.png') no-repeat top right;
   }
+
+  @media (max-width: 1240px) {
+    background: url('../../assets/background-discounts.png') no-repeat 400px;
+  }
+
+  @media (max-width: 745px) {
+    background: none;
+    min-height: auto;
+  }
 }
 
 .boxAdvantages {
   width: 40%;
+  @media (max-width: 1240px) {
+    width: 50%;
+  }
+
+  @media (max-width: 745px) {
+    width: 100%;
+  }
 }
 
 .titleAdvantages {

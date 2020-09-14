@@ -25,12 +25,14 @@
       content="O88EPmYY3idicmz2vckWb8eEjWENHDgRLd1y0KNf"
     />
 
-    <link rel="stylesheet" href="css/main.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="css/glider.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>
       Doutor Hoje - Consultas e exames com preços acessíveis. Confira já!
     </title>
@@ -44,7 +46,12 @@
             <option value="">Distrito Federal</option>
           </select>
         </div>
-        <ul>
+        <div class="menuToggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <ul class="listMenu">
           <li class="menuItem">
             <img src="assets/svg/consultor.svg" alt="Seja um consultor" />
             <a href="" class="menuAnchor" title="Seja um consultor"
@@ -177,7 +184,7 @@
           </p>
         </div>
 
-        <div class="boxCardSignatures">
+        <div class="boxCardSignatures carouselSignatures">
           <article class="easy_cardSignatures">
             <h3 class="titleTypeSignature">
               <span>Assinatura</span>
@@ -281,6 +288,8 @@
             </div>
           </article>
         </div>
+
+        <div role="tablist" class="dots"></div>
 
         <div class="boxCardFamily">
           <div class="descriptionSignatureFamily">
@@ -424,7 +433,7 @@
           </article>
         </div>
 
-        <div class="boxPrices">
+        <div class="boxPrices typeConsults">
           <article class="cardPrice">
             <p class="titleCardPrice">Consultas Presenciais</p>
 
@@ -671,6 +680,7 @@
             <a href="" class="anchorCardPrice">Saiba Mais</a>
           </article>
         </div>
+        <div role="tablist" class="dotsConsults"></div>
         <!-- final boxPrices -->
         <div class="alertPrices">
           <small>
@@ -815,8 +825,8 @@
         <div class="boxVideo">
           <div class="videoContent">
             <iframe
-              width="760"
-              height="481"
+              width="100%"
+              height="auto"
               src="https://www.youtube.com/embed/YMrQktkiEKI"
               frameborder="0"
               allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -1115,5 +1125,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/glider.min.js"></script>
   </body>
 </html>

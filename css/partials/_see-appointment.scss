@@ -68,6 +68,10 @@
   display: flex;
   justify-content: center;
   margin: 4rem 0 10rem 0;
+  @media (max-width: 1150px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .itemNumber {
     display: flex;
     flex-direction: column;
@@ -80,6 +84,17 @@
     color: #dde4f9;
     padding: 4rem;
     margin-right: 3rem;
+    @media (max-width: 1150px) {
+      width: 48%;
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 660px) {
+      width: 100%;
+      margin-right: 0rem;
+      margin-bottom: 3rem;
+    }
     strong {
       font-size: 4.8rem;
       font-weight: 600;

@@ -33,7 +33,7 @@ var acc = document.getElementsByClassName('accordion');
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
+  acc[i].addEventListener('click', () => {
     this.classList.toggle('active');
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -43,3 +43,68 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//Menu Responsivo
+
+let show = true;
+
+const mainMenu = document.querySelector('.mainMenu');
+const menuToggle = document.querySelector('.menuToggle');
+
+menuToggle.addEventListener('click', () => {
+  document.body.style.overflow = show ? 'hidden' : 'initial';
+  mainMenu.classList.toggle('on', show);
+  show = !show;
+});
+
+//Corusel
+
+window.addEventListener('load', function () {
+  new Glider(document.querySelector('.carouselSignatures'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.dots',
+    scrollLock: 'true',
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  });
+});
+
+window.addEventListener('load', function () {
+  new Glider(document.querySelector('.typeConsults'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '.dotsConsults',
+    scrollLock: 'true',
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1220,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  });
+});

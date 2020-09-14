@@ -1,11 +1,11 @@
 .wrapperAppointment {
   background: url('../assets/background-appointment.png') 50% 0;
   width: 100%;
-  height: 900px;
   background-size: cover;
 
   @media (max-width: 1250px) {
     background: url('../assets/background-appointment.png') 70% 0;
+    background-size: cover;
   }
 }
 
@@ -14,10 +14,17 @@
   justify-content: space-between;
   padding: 40px 20px;
   height: 100%;
+  @media (max-width: 930px) {
+    flex-direction: column;
+  }
 }
 
 .leftLogo {
   width: 60%;
+  @media (max-width: 930px) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .rightNavForm {
@@ -26,16 +33,27 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
+  @media (max-width: 930px) {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
 }
 
 .listAppointment {
   display: flex;
+  @media (max-width: 930px) {
+    flex: 1;
+    justify-content: space-around;
+  }
 }
 
 .anchorAppointment {
   color: $color-text-base;
   font-size: 1.8rem;
   margin-right: 3rem;
+  @media (max-width: 930px) {
+    margin-right: 0;
+  }
 }
 
 .phoneNumber {
@@ -46,18 +64,38 @@
     height: 20px;
     margin-right: 0.8rem;
   }
+
+  @media (max-width: 930px) {
+    width: 100%;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+}
+
+.navAppointment {
+  @media (max-width: 930px) {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .formAppointment {
   position: relative;
   width: 100%;
   max-width: 540px;
+  @media (max-width: 930px) {
+    max-width: 100%;
+  }
   legend {
     font-size: 6rem;
     color: $color-text-secundary;
     font-weight: 300;
     text-align: right;
     margin: 6rem 0;
+    @media (max-width: 570px) {
+      font-size: 4rem;
+    }
     span {
       display: block;
       width: 100%;
@@ -73,6 +111,7 @@
   border: 1px solid $color-primary;
   display: flex;
   border-radius: 4rem;
+
   button {
     display: flex;
     align-items: center;
@@ -145,6 +184,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1.8rem;
+  @media (max-width: 570px) {
+    flex-direction: column;
+  }
   .anchorSeeMore {
     display: flex;
     align-items: center;
@@ -152,6 +194,10 @@
     color: $color-secundary;
     font-size: 1.4rem;
     margin: 0.8rem 0 0 2rem;
+    @media (max-width: 570px) {
+      width: 100%;
+      margin-bottom: 1.6rem;
+    }
     img {
       margin-right: 1.6rem;
     }
@@ -170,5 +216,8 @@
 
   .sendSearch {
     @include mainButton($color-secundary, $color-white);
+    @media (max-width: 570px) {
+      width: 100%;
+    }
   }
 }

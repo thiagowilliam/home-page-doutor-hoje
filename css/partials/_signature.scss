@@ -6,6 +6,9 @@
   padding: 10rem 300px 10rem 0;
   display: flex;
   align-items: flex-end;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
   h2 {
     color: $color-primary;
     font-size: 5rem;
@@ -21,17 +24,41 @@
     width: 80%;
     line-height: 2.4rem;
     padding-bottom: 1rem;
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin-top: 1.6rem;
+    }
   }
 }
 
 .boxCardSignatures {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.4rem;
-  padding-right: 8rem;
+  position: relative;
+  display: flex;
+}
+.glider-track {
+  article {
+    &::before {
+      display: none;
+    }
+  }
+  article:nth-child(2) {
+    margin: 0 2rem;
+  }
+}
+
+.glider-dot {
+  &::before {
+    display: none;
+  }
+
+  @media (min-width: 1220px) {
+    display: none;
+  }
 }
 
 .easy_cardSignatures {
+  width: 33%;
+
   @include cardSignatures(
     $color-white,
     $color-gradient-blue-light,
@@ -40,24 +67,39 @@
 }
 
 .plus_cardSignatures {
+  width: 33%;
   @include cardSignatures(#2d4bdc, #80a3f6, $color-text-in-primary);
 }
 
 .total_cardSignatures {
+  width: 33%;
   @include cardSignatures(#4222cd, #070256, $color-text-in-primary);
 }
 
 .boxCardFamily {
   display: flex;
   justify-content: space-between;
-  padding: 10rem 8rem 22rem 0;
+  padding: 10rem 0rem 22rem 0;
   background: url(../assets/img-signature-family.png) 55% 59px no-repeat;
+  @media (max-width: 990px) {
+    flex-direction: column;
+    background: url(../assets/img-signature-family.png) 283% -59px no-repeat;
+  }
+
+  @media (max-width: 890px) {
+    background: url(../assets/img-signature-family.png) top right no-repeat;
+    background-size: 220px;
+  }
 }
 
 .descriptionSignatureFamily {
-  width: calc(33% - 1.2rem);
+  width: 33%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 990px) {
+    width: 50%;
+    margin-bottom: 4rem;
+  }
   h3 {
     font-size: 5.5rem;
     color: $color-secundary;
@@ -82,6 +124,13 @@
 }
 
 .family_cardSignatures {
-  width: calc(33% - 1.2rem);
+  width: 33%;
   @include cardSignatures(#ef0732, #7d0754, $color-text-in-primary);
+  @media (max-width: 990px) {
+    width: 50%;
+  }
+
+  @media (max-width: 890px) {
+    width: 100%;
+  }
 }
