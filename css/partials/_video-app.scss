@@ -132,5 +132,8 @@
   @media (max-width: 540px) {
     width: 100%;
     justify-content: center;
+    img {
+      width: 100%;
+    }
   }
 }

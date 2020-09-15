@@ -1,5 +1,8 @@
 .wrapperSeeAppointment {
   padding: 10rem 2rem 0 2rem;
+  @media (max-width: 530px) {
+    display: none;
+  }
 }
 
 .titleSeeAppointment {

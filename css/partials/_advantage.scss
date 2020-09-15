@@ -32,10 +32,19 @@
   font-size: 5rem;
   font-weight: 300;
   line-height: 5.5rem;
+
+  @media (max-width: 440px) {
+    font-size: 3rem;
+  }
 }
 
 .boxPartners {
   margin: 6rem 0;
+  @media (max-width: 535px) {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .describeAdvantages {

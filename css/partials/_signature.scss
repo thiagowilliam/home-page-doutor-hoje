@@ -1,5 +1,9 @@
 .wrapperSignature {
   background: url('../assets/img-signatures.png') no-repeat 100% top;
+
+  @media (max-width: 700px) {
+    background: none;
+  }
 }
 
 .topSignature {
@@ -9,6 +13,11 @@
   @media (max-width: 1000px) {
     flex-direction: column;
   }
+
+  @media (max-width: 700px) {
+    padding: 10rem 0px 10rem 0;
+  }
+
   h2 {
     color: $color-primary;
     font-size: 5rem;
@@ -47,6 +56,7 @@
 }
 
 .glider-dot {
+  margin-top: 2rem;
   &::before {
     display: none;
   }
@@ -90,6 +100,11 @@
     background: url(../assets/img-signature-family.png) top right no-repeat;
     background-size: 220px;
   }
+
+  @media (max-width: 690px) {
+    background: none;
+    background-size: 220px;
+  }
 }
 
 .descriptionSignatureFamily {
@@ -100,12 +115,20 @@
     width: 50%;
     margin-bottom: 4rem;
   }
+
+  @media (max-width: 690px) {
+    width: 100%;
+  }
   h3 {
     font-size: 5.5rem;
     color: $color-secundary;
     font-weight: 300;
     line-height: 6.5rem;
     margin-bottom: 3rem;
+
+    @media (max-width: 690px) {
+      font-size: 4rem;
+    }
   }
 
   p {

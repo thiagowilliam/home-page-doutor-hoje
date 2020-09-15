@@ -21,14 +21,29 @@
   @media (max-width: 1400px) {
     margin-bottom: 4rem;
   }
+
+  @media (max-width: 530px) {
+    flex-direction: column;
+  }
   img {
     margin-right: 2.8rem;
     flex-shrink: 0;
+    @media (max-width: 530px) {
+      margin-right: 0;
+      margin-bottom: 1.8rem;
+    }
   }
   p {
     max-width: 44rem;
     span {
       display: block;
+    }
+
+    @media (max-width: 530px) {
+      text-align: center;
+      span {
+        display: inline-block;
+      }
     }
   }
 }
@@ -79,13 +94,28 @@
 
 .boxLinkQuery {
   display: flex;
+  @media (max-width: 530px) {
+    flex-direction: column;
+    width: 100%;
+  }
   a {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 530px) {
+      width: 100%;
+    }
+
     @include mainButton($color-white, $color-primary);
     + a {
       margin-left: 2rem;
+    }
+
+    @media (max-width: 530px) {
+      + a {
+        margin-left: 0rem;
+        margin-top: 2rem;
+      }
     }
   }
 }
