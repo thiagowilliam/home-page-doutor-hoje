@@ -1,0 +1,100 @@
+.logoMenuTop {
+  img {
+    width: 85px;
+  }
+}
+
+.wrapperShowNewPlans {
+  .centraliza {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.figureShowNewPlans {
+  width: 50%;
+  object-fit: cover;
+  img {
+    width: 100%;
+  }
+}
+
+.textShowNewPlans {
+  display: flex;
+  justify-content: center;
+  color: #0439d6;
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 3rem;
+  p {
+    margin-left: 3rem;
+  }
+  p:nth-child(1) {
+    margin-left: 0rem;
+  }
+}
+
+.descriptionNewPlans {
+  margin-top: 6rem;
+  width: 45%;
+  h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 5rem;
+    color: #ef0732;
+  }
+  p {
+    color: #0439d6;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin: 3rem 0;
+  }
+  strong {
+    color: #ef0732;
+    font-family: 700;
+  }
+}
+
+.wrapperNameSignatures {
+  background: #d5e0fb45;
+  .centraliza {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: #0439d6;
+    font-weight: 400;
+    max-width: 470px;
+    width: 100%;
+    span {
+      display: block;
+    }
+  }
+}
+
+.boxImgNameSignatures {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 3rem 0;
+
+  .imgNameSignatures {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      text-align: center;
+      span {
+        display: block;
+      }
+    }
+  }
+}
