@@ -46,15 +46,15 @@ for (i = 0; i < acc.length; i++) {
 
 //Menu Responsivo
 
-let show = true;
+let menuShow = true;
 
 const mainMenu = document.querySelector('.mainMenu');
 const menuToggle = document.querySelector('.menuToggle');
 
 menuToggle.addEventListener('click', () => {
-  document.body.style.overflow = show ? 'hidden' : 'initial';
-  mainMenu.classList.toggle('on', show);
-  show = !show;
+  document.body.style.overflow = menuShow ? 'hidden' : 'initial';
+  mainMenu.classList.toggle('on', menuShow);
+  menuShow = !menuShow;
 });
 
 //Corusel

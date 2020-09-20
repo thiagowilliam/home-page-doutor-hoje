@@ -14,6 +14,7 @@
   justify-content: space-between;
   padding: 40px 20px;
   height: 100%;
+
   @media (max-width: 930px) {
     flex-direction: column;
   }
@@ -21,6 +22,7 @@
 
 .leftLogo {
   width: 60%;
+
   @media (max-width: 930px) {
     width: 100%;
     text-align: center;
@@ -33,6 +35,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-content: flex-start;
+
   @media (max-width: 930px) {
     width: 100%;
     margin-top: 1.6rem;
@@ -41,6 +44,7 @@
 
 .listAppointment {
   display: flex;
+
   @media (max-width: 930px) {
     flex: 1;
     justify-content: space-around;
@@ -51,6 +55,7 @@
   color: $color-text-base;
   font-size: 1.8rem;
   margin-right: 3rem;
+
   @media (max-width: 930px) {
     margin-right: 0;
   }
@@ -60,6 +65,7 @@
   display: flex;
   align-items: center;
   color: $color-secundary;
+
   img {
     height: 20px;
     margin-right: 0.8rem;
@@ -84,18 +90,22 @@
   position: relative;
   width: 100%;
   max-width: 540px;
+
   @media (max-width: 930px) {
     max-width: 100%;
   }
+
   legend {
     font-size: 6rem;
     color: $color-text-secundary;
     font-weight: 300;
     text-align: right;
     margin: 6rem 0;
+
     @media (max-width: 570px) {
       font-size: 4rem;
     }
+
     span {
       display: block;
       width: 100%;
@@ -125,14 +135,17 @@
     border-radius: 4rem;
     font-weight: 300;
     cursor: pointer;
+
     @media (max-width: 440px) {
       font-size: 1.6rem;
       height: 3.8rem;
     }
+
     &.hasBlue {
       background: $color-primary;
       color: $color-text-in-primary;
       transition: all 0.2s;
+
       &:hover {
         background: darken($color-primary, 10%);
       }
@@ -149,19 +162,23 @@
   font-size: 2.4rem;
   padding: 1.4rem;
   margin-top: 1.8rem;
+
   @media (max-width: 440px) {
     font-size: 1.6rem;
   }
+
   input {
     background: transparent;
     border: 0;
     flex: 1;
     color: $color-text-base;
+
     &::placeholder {
       color: $color-text-base;
       opacity: 0.5;
     }
   }
+
   p {
     width: 13rem;
     padding-left: 1.4rem;
@@ -183,6 +200,7 @@
     flex: 1;
     color: $color-text-base;
     font-size: 1.8rem;
+
     @media (max-width: 440px) {
       font-size: 1.4rem;
     }
@@ -198,9 +216,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1.8rem;
+
   @media (max-width: 570px) {
     flex-direction: column;
   }
+
   .anchorSeeMore {
     display: flex;
     align-items: center;
@@ -208,20 +228,24 @@
     color: $color-secundary;
     font-size: 1.4rem;
     margin: 0.8rem 0 0 2rem;
+
     @media (max-width: 570px) {
       width: 100%;
       margin-bottom: 1.6rem;
     }
+
     img {
       margin-right: 1.6rem;
     }
   }
+
   .textAlternative {
     width: 100%;
     color: $color-secundary;
     font-size: 1.6rem;
     text-align: center;
     margin-top: 3rem;
+
     a {
       font-weight: 600;
       color: $color-secundary;
@@ -230,8 +254,30 @@
 
   .sendSearch {
     @include mainButton($color-secundary, $color-white);
+
     @media (max-width: 570px) {
       width: 100%;
     }
+  }
+}
+
+.anchorPageNewPlans {
+  background: #ffffff8a 0% 0% no-repeat padding-box;
+  border: 1px solid #0439d6;
+  border-radius: 1rem;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  position: relative;
+  padding-left: 8rem;
+  align-items: center;
+  justify-content: center;
+  color: #0439d6;
+  margin-top: 4rem;
+  img {
+    position: absolute;
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
   }
 }
